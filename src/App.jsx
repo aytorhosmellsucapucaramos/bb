@@ -130,7 +130,7 @@ function App() {
           transition={{ duration: 0.8 }}
         >
           <h1>Abre cuando... 💌</h1>
-          <p className="subtitle">Mensajes especiales para ti, mi amor</p>
+          <p className="subtitle">Mensajes especiales para ti, mi chocolatito de leche</p>
         </motion.div>
 
         <div className="envelopes-grid">
