@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  overflow-x: hidden;
+}
+
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hearts-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.floating-heart {
+  position: absolute;
+  font-size: 24px;
+  filter: blur(1px);
+  opacity: 0.6;
+}
+
+.intro-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.big-heart {
+  font-size: 120px;
+  filter: drop-shadow(0 0 20px rgba(255, 105, 180, 0.8));
+}
+
+.intro-screen h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  padding: 0 1rem;
+}
+
+.open-button {
+  padding: 1.5rem 3rem;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #ff6b9d 0%, #c06c84 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "Georgia", serif;
+  box-shadow: 0 10px 30px rgba(255, 107, 157, 0.4);
+  transition: all 0.3s ease;
+}
+
+.open-button:hover {
+  transform: translateY(-5px);
+}
+
+.letter-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+.letter {
+  background: linear-gradient(135deg, #ffffff 0%, #fff5f7 100%);
+  padding: 3rem;
+  border-radius: 20px;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 10;
+}
+
+.letter::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 182, 193, 0.1),
+    transparent
+  );
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+.letter-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #ff69b4;
+  padding-bottom: 1rem;
+}
+
+.letter-header h2 {
+  color: #c06c84;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.letter p {
+  color: #333;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  position: relative;
+  z-index: 1;
+}
+
+.quote {
+  font-style: italic;
+  color: #c06c84;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-left: 4px solid #ff69b4;
+  background: rgba(255, 182, 193, 0.1);
+  border-radius: 10px;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.dates-section {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 182, 193, 0.2) 0%,
+    rgba(192, 108, 132, 0.2) 100%
+  );
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 2rem 0;
+  border: 2px solid rgba(255, 105, 180, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.date-item {
+  color: #555;
+  font-size: 1.1rem;
+  margin: 0.8rem 0;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.heart-bullet {
+  font-size: 1.3rem;
+  display: inline-block;
+}
+
+.emphasis {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #c06c84;
+  text-shadow: 0 2px 10px rgba(192, 108, 132, 0.3);
+}
+
+.signature {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #ff69b4;
+  position: relative;
+  z-index: 1;
+}
+
+.signature > div {
+  display: inline-block;
+  font-size: 60px;
+  margin-bottom: 1rem;
+}
+
+.signature p {
+  font-size: 1.3rem;
+  color: #c06c84;
+  font-style: italic;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .intro-screen h1 {
+    font-size: 2rem;
+  }
+
+  .big-heart {
+    font-size: 80px;
+  }
+
+  .open-button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  .letter {
+    padding: 1.5rem;
+  }
+
+  .letter p {
+    font-size: 1rem;
+  }
+
+  .letter-header h2 {
+    font-size: 1.5rem;
+  }
+}
