@@ -7,57 +7,66 @@ const envelopes = [
   {
     id: 1,
     title: "Abre cuando estés triste",
-    content: "Mi amor, sé que a veces las cosas se ponen difíciles. Pero quiero que recuerdes que no estás sola. Estoy aquí para ti, siempre. Tu sonrisa es lo más hermoso que he visto, y haré todo lo posible por verla de nuevo. Eres fuerte, valiente y absolutamente increíble. Este momento pasará, y yo estaré aquí contigo. Te amo más de lo que las palabras pueden expresar. 💕",
-    emoji: "😢"
+    content:
+      "Pame, sé que a veces las cosas se ponen difíciles. Pero quiero que recuerdes que no estás sola. Estoy aquí para ti, siempre. Tu sonrisa es lo más hermoso que he visto, y haré todo lo posible por verla de nuevo. Eres fuerte, valiente y absolutamente increíble. Este momento pasará, y yo estaré aquí contigo, mi chocolatito de leche. Te amo más de lo que las palabras pueden expresar. 💕",
+    emoji: "😢",
   },
   {
     id: 2,
     title: "Abre cuando me extrañes",
-    content: "Baby, yo también te extraño muchísimo. Cada momento sin ti se siente eterno. Pero piensa en esto: cada segundo que pasa es un segundo menos para volver a verte. Cierra los ojos y recuerda nuestro último abrazo, nuestras risas, esos momentos tontos que tanto amamos. Pronto estaremos juntos de nuevo, y será aún mejor. Te llevo en mi corazón siempre. 💝",
-    emoji: "💭"
+    content:
+      "Mimi, yo también te extraño muchísimo. Cada momento sin ti se siente eterno. Pero piensa en esto: cada segundo que pasa es un segundo menos para volver a verte. Cierra los ojos y recuerda nuestro último abrazo, nuestras risas, esos momentos tontos que tanto amamos. Pronto estaremos juntos de nuevo y será aún mejor. Te llevo en mi corazón siempre. 💝",
+    emoji: "💭",
   },
   {
     id: 3,
     title: "Abre cuando no puedas dormir",
-    content: "Mi cielo, sé que tu mente a veces no te deja descansar. Respira profundo conmigo: inhala... exhala... Imagina que estoy ahí contigo, abrazándote, acariciando tu cabello. Todo va a estar bien. Mañana será un nuevo día lleno de posibilidades. Descansa tranquila sabiendo que eres amada, protegida y valorada. Dulces sueños, mi amor. 🌙",
-    emoji: "🌙"
+    content:
+      "Pamela, sé que tu mente a veces no te deja descansar. Respira profundo conmigo: inhala... exhala... Imagina que estoy ahí contigo, abrazándote y acariciando tu cabello. Todo va a estar bien. Mañana será un nuevo día lleno de posibilidades. Descansa tranquila sabiendo que eres amada, protegida y valorada. Dulces sueños, mi amor. 🌙",
+    emoji: "🌙",
   },
   {
     id: 4,
     title: "Abre cuando estés feliz",
-    content: "¡Ese es el espíritu! Me encanta cuando estás feliz, tu energía es contagiosa y hace que mi día sea mejor. Celebra cada momento de alegría, te lo mereces todo y más. Tu felicidad es mi felicidad. Sigue brillando como la estrella que eres. Estoy tan orgulloso de ti y de todo lo que logras. ¡Te amo, mi sol! ☀️",
-    emoji: "😊"
+    content:
+      "¡Ese es el espíritu! Me encanta cuando estás feliz, tu energía es contagiosa y hace que mi día sea mejor. Celebra cada momento de alegría, te lo mereces todo y más. Tu felicidad es mi felicidad. Sigue brillando como la estrella que eres. Estoy tan orgulloso de ti y de todo lo que logras. ¡Te amo, mi sol! ☀️",
+    emoji: "😊",
   },
   {
     id: 5,
     title: "Abre cuando necesites motivación",
-    content: "Escúchame bien: TÚ PUEDES CON TODO. Eres más capaz de lo que crees. Has superado tantas cosas difíciles y seguirás haciéndolo. No te rindas ahora. Cada paso que das, por pequeño que sea, te acerca a tus metas. Confío en ti completamente. Eres mi héroe, mi inspiración. Vamos juntos, siempre. 💪",
-    emoji: "💪"
+    content:
+      "Escúchame bien: tú puedes con todo. Eres más capaz de lo que crees. Has superado tantas cosas difíciles y seguirás haciéndolo. No te rindas ahora. Cada paso que das, por pequeño que sea, te acerca a tus metas. Confío en ti completamente, mi Mimi. Vamos juntos, siempre. 💪",
+    emoji: "💪",
   },
   {
     id: 6,
     title: "Abre cuando quieras reír",
-    content: "¿Recuerdas cuando [inserta momento gracioso entre ustedes]? 😂 Tu risa es mi sonido favorito en el mundo. Eres la persona más divertida y especial que conozco. Nunca pierdas esa chispa que te hace única. Aquí hay un chiste malo: ¿Qué le dice un gato a otro gato? ¡Miau! Jajaja okay, admito que fue terrible, pero espero haberte sacado una sonrisa. Te amo, mi amor. 😄",
-    emoji: "😂"
+    content:
+      "¿Recuerdas cuando nos reímos tanto? 😂 Tu risa es mi sonido favorito en el mundo. Eres la persona más divertida y especial que conozco. Nunca pierdas esa chispa que te hace única. Aquí va un chiste malo: ¿Qué le dice un gato a otro gato? ¡Miau! Jajaja, estuvo malísimo, pero ojalá te saque una sonrisa. Te amo. 😄",
+    emoji: "😂",
   },
   {
     id: 7,
     title: "Abre cuando dudes de ti misma",
-    content: "Déjame decirte algo: eres INCREÍBLE. No perfecta, pero perfecta para mí. Tus 'defectos' son parte de lo que te hace especial. Eres inteligente, hermosa, talentosa y única. No dejes que nadie (ni siquiera tú misma) te haga dudar de tu valor. Yo veo en ti todo lo que eres capaz de ser. Confía en ti tanto como yo confío en ti. 💖",
-    emoji: "✨"
+    content:
+      "Déjame decirte algo: eres increíble. No perfecta, pero perfecta para mí. Tus defectos son parte de lo que te hace especial. Eres inteligente, hermosa, talentosa y única. No dejes que nadie (ni siquiera tú misma) te haga dudar de tu valor. Yo veo en ti todo lo que eres capaz de ser. Confía en ti tanto como yo confío en ti, Pame. 💖",
+    emoji: "✨",
   },
   {
     id: 8,
     title: "Abre cuando te sientas sola",
-    content: "Mi amor, aunque no esté físicamente ahí, estoy contigo siempre. En cada latido de tu corazón, en cada pensamiento. Tú y yo estamos conectados de una manera especial que el espacio no puede romper. Cuando te sientas sola, mira el cielo - estamos bajo las mismas estrellas. Piensa en mí, porque yo definitivamente estoy pensando en ti. Nunca estás sola. 🌟",
-    emoji: "🤗"
+    content:
+      "Aunque no esté físicamente ahí, estoy contigo siempre. En cada latido de tu corazón, en cada pensamiento. Tú y yo estamos conectados de una manera especial que el espacio no puede romper. Cuando te sientas sola, mira el cielo: estamos bajo las mismas estrellas. Piensa en mí, porque yo definitivamente estoy pensando en ti, mi chocolatito de leche. Nunca estás sola. 🌟",
+    emoji: "🤗",
   },
   {
     id: 9,
     title: "Abre solo porque sí",
-    content: "No necesitas una razón especial para saber cuánto te amo. Hoy, mañana y siempre, eres lo más importante para mí. Gracias por existir, por elegirme, por ser tú. Cada día contigo (o pensando en ti) es un regalo. Eres mi persona favorita en todo el universo. Te amo infinitamente. Por siempre tuyo. 💗",
-    emoji: "💌"
-  }
+    content:
+      "No necesitas una razón especial para saber cuánto te amo. Hoy, mañana y siempre, eres lo más importante para mí. Gracias por existir, por elegirme y por ser tú. Cada día contigo (o pensando en ti) es un regalo. Eres mi persona favorita en todo el universo. Te amo infinitamente. Por siempre tuyo. 💗",
+    emoji: "💌",
+  },
 ];
 
 function App() {
